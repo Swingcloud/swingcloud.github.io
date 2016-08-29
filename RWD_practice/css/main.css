@@ -1,0 +1,51 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.content, .sidebar {
+	float: left;
+	padding: 0 10px;
+}
+
+
+.content {
+	width: 70%;
+}
+
+.sidebar{
+	width: 30%;	
+}
+
+.col-4{
+	float: left;
+	width:33.33333333333333333333%;
+	padding: 0 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+	.container{
+		max-width: 760px;
+	}
+}
+
+
+@media (max-width: 760px){  /*column drop功能*/
+	.col-4 {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.content, .sidebar {
+		width: 100%;
+	}
+}

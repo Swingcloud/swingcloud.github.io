@@ -1,0 +1,435 @@
+img {
+	display: block; 
+}
+
+/*.container	{
+	width: 1180px;
+	margin: 0 auto;
+	
+}
+*/
+.clearfix	{
+	clear: both;
+}
+
+#header {
+	position: fixed;  
+	width: 100%; /*將header撐開到一個畫面寬*/
+
+}
+
+#logo{
+	float: left;
+}
+#nav {
+	float: right;
+}
+
+#nav ul{
+	list-style-type: none;
+	margin: 0px; /*取消原本瀏覽器設定的margin*/
+    line-height: 40px; /*讓導覽列上下置中*/
+}
+
+#nav li {
+	float: left;
+	
+}
+
+#nav a {
+	padding: 0px 24px; /*隔出間隔*/
+	color: #fff; /*白色*/
+	text-decoration: none; /*消掉預設藍色以及底線*/
+	text-transform: capitalize; /*第一個字母大寫*/
+}
+
+#banner {
+	background-color: #999ac6; /*設定banner背景顏色*/
+	height: 100vh; /*佔滿整個螢幕*/
+	
+}
+
+.banner-container{
+	position: relative; /*可調整位置*/
+	top:50%;
+	background-color: rgba(0,0,0,.3);
+}
+
+.banner-container .clearfix {
+	float: none; /*將float清掉*/
+}
+
+.banner-container >div { /*banner-container底下的所有div全部float left*/
+	float: left;
+}
+
+.banner-container .title{
+	background-color: rgba(0,0,0, .3);
+	text-align: center;
+}
+.banner-container img { /*跟隨父元素的寬度*/
+	width: 100%;
+	height: auto; /*保持原本圖片比例*/
+}
+
+#banner .left, #banner .right {
+	width: 30%;
+	font-size: 100px;
+	font-weight: 100;
+	line-height: 160px;
+}
+
+#banner .title {
+	width: 40%;
+	padding: 30px 0 ;
+}
+
+#banner .title h3{
+	text-transform: uppercase;
+	font-weight: 300px;
+	letter-spacing: 2px;
+}
+
+#banner .right{
+	text-align: right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+#banner .left{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+#banner .title h3{
+	font-size: 14px;
+}
+
+#banner .title h3:first-child {
+	margin-top: 0;
+}
+
+#banner .title h3:last-child {
+	margin-bottom: 0;
+}
+.feature{
+	width: 33.33%;
+	float: left;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; /*將content box改成border box*/
+}
+
+.feature .title  > img, .feature .title > h3 {
+	float: left;
+}
+
+.feature .title h3 {
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 45px;
+}
+
+.feature .title img {
+	margin-right: 20px;
+}
+
+.portfolio .container>h2, .portfolio .container>p{
+	text-align: center;
+}
+
+.portfolio .container>img{
+	widows: 35px;
+	margin:0 auto;
+}
+
+.portfolio a{
+	text-decoration: none;
+}
+
+.portfolio li{
+	list-style-type: none;
+	display: inline;
+	padding-left: 20px;
+}
+
+.portfolio ul{
+	text-align: center;
+}
+
+.works .row img {
+	width: 100%;
+	height: auto;    /*保持原始比例*/
+}
+
+.works .row>.col-3{
+	float: left;
+	width: 25%;
+	overflow: hidden;
+	
+}
+
+.works .row>.col-6{
+	float: left;
+	overflow: hidden;
+	width: 50%;
+	overflow: hidden;
+}
+
+
+.works .row>.col-6>.col-6{
+	float: left;
+	overflow: hidden;
+	width: 50%;
+	overflow: hidden;
+	
+}
+
+.loadmore {
+	background-color: #51b5d6;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.loadmorebutton{
+	text-align: center;
+}
+
+.loadmore h3{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	background-color: white;
+	display: inline;
+	border-radius: 3px;
+}
+
+.actionrow {
+	background-color: #9ec7cf;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	line-height: 100%;
+}
+
+.actionrow h2 {
+	float: left;
+	font-weight: 400;
+	font-size: 2em;
+	padding: 10px;
+	
+}
+
+.actionrow p {
+	float: right;
+	font-size: 1.5rem;
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 5%;
+
+}
+
+.our {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.our h2{
+	font-size: 2em;
+	font-weight: 200;
+	text-transform: capitalize;
+}
+
+.our h2>b {
+	font-weight: 600;
+}
+
+.our .ourskills{
+	width: 50%;
+	float: left;
+}
+
+
+.our .ourservice{
+	width: 50%;
+	float: right;
+}
+
+.our .ourservice .square-logo {
+	width: 30%;
+	float: left;
+}
+
+.our .ourservice .services {
+	float: right;
+	width: 70%;
+}
+
+.our .ourservice .services p{
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.our .ourservice .viewdetail{
+	float: left;
+	padding-top: 30px;
+}
+
+.our .ourservice .viewdetail p{
+	font-size: 1.3em;
+	display: inline;
+	background-color: gray;
+	padding: 5px 10px; 
+	color: white;
+	border-radius: 5%;
+}
+
+.fact{
+	display: inline-block;
+	text-align: center;
+	
+}
+
+.factborder{
+	background-color: #DF6A6A;
+	padding: 2.5em;
+}
+
+.fact .somefacts {
+	display: inline-block;
+	text-align: center;
+	padding: 0 70px;
+	color: #fff;
+}
+
+.fact .somefacts .number{
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+
+.qoutes{
+	background-color: #1E1D29;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+}
+.qoute-word{
+	width: 50%;
+	float: left;
+	color: white;
+	
+}
+
+.quote-container{
+	width: 75%;
+}
+
+.marks{
+	width: 50%;
+	float: right;
+}
+
+.marks .mark{
+	display: inline-block;
+}
+
+.lists{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.lists .somelists {
+	display: inline-block;
+	padding-right: 180px;
+}
+
+.lists .somelists ul{
+	list-style-type: circle;
+}
+
+.lists .somelists a{
+	text-decoration: none;
+}
+
+.lists .somelists li{
+	line-height: 1.5em;
+}
+
+.photos .photo1 {
+	background-color: #f4e285;
+	float: left;
+	width: 20%;
+	padding-top: 300px;
+}
+
+.photos .photo2 {
+	background-color: #5b8e7d;
+	float: left;
+	width: 20%;
+	padding-top: 300px;
+}
+
+.photos .photo3 {
+	background-color: #8cb369;
+	float: left;
+	width: 20%;
+	padding-top: 300px;
+}
+
+.photos .photo4 {
+	background-color: #bc4b51;
+	float: left;
+	width: 20%;
+	padding-top: 300px;
+}
+
+.photos .photo5 {
+	background-color: #f4a259;
+	float: left;
+	width: 20%;
+	padding-top: 300px;
+}
+
+.photocontainer p, .photocontainer h4{
+	text-align: center;
+}
+
+
+
+
+
+#footer{
+	padding: 600px 0;
+}
+
+.socialmedia  {
+	margin: 0;
+	padding-left: 0;
+	list-style-type:none;
+	text-align: center;
+
+}
+
+
+.socialmedia li {
+	display: inline;
+	margin-right: 10px;
+	padding: 8px 6px;
+	border-radius: 50%;
+}
+
+.socialmedia a{
+	color: white;
+}
+.socialmedia li.twitter{
+	background-color: #FFAB02;
+}
+
+.socialmedia li.facebook{
+	background-color: #0088F6;
+}
+
