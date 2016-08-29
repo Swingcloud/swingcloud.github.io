@@ -1,24 +1,39 @@
-#header{
-	background-color: rgba(220,220,220, 0.5);
-	padding: 25px 0;
+img {
+	display: block; 
 }
 
-#logo {
+/*.container	{
+	width: 1180px;
+	margin: 0 auto;
+	
+}
+*/
+.clearfix	{
+	clear: both;
+}
+
+#header {
+	position: fixed;  
+	width: 100%; /*將header撐開到一個畫面寬*/
+
+}
+
+#logo{
 	float: left;
 }
-
-#nav{
+#nav {
 	float: right;
 }
 
 #nav ul{
 	list-style-type: none;
 	margin: 0px; /*取消原本瀏覽器設定的margin*/
-  line-height: 40px; /*讓導覽列上下置中*/
+    line-height: 40px; /*讓導覽列上下置中*/
 }
 
-#nav li{
+#nav li {
 	float: left;
+	
 }
 
 #nav a {
@@ -28,35 +43,31 @@
 	text-transform: capitalize; /*第一個字母大寫*/
 }
 
-#header-bgp{
-	height: 100vh;
-	background-color: rgba(0,0,80, 0.3);
+#banner {
+	background-color: #999ac6; /*設定banner背景顏色*/
+	height: 100vh; /*佔滿整個螢幕*/
+	
 }
 
-#banner{
+.banner-container{
 	position: relative; /*可調整位置*/
 	top:50%;
-	
-	
+	background-color: rgba(0,0,0,.3);
 }
 
 .banner-container .clearfix {
 	float: none; /*將float清掉*/
 }
 
-.banner-container{
-	background-color: rgba(0,0,0,.3);
-}
-
-.banner-container >div {
+.banner-container >div { /*banner-container底下的所有div全部float left*/
 	float: left;
 }
 
-#banner .title{
+.banner-container .title{
 	background-color: rgba(0,0,0, .3);
 	text-align: center;
 }
-#banner img { /*跟隨父元素的寬度*/
+.banner-container img { /*跟隨父元素的寬度*/
 	width: 100%;
 	height: auto; /*保持原本圖片比例*/
 }
@@ -105,10 +116,6 @@
 #banner .title h3:last-child {
 	margin-bottom: 0;
 }
-.features{
-	padding: 50px 0;
-}
-
 .feature{
 	width: 33.33%;
 	float: left;
@@ -133,43 +140,29 @@
 	margin-right: 20px;
 }
 
-.portfolio{
-	background-color: #1A273A;
-	padding-top: 50px;
-}
-
 .portfolio .container>h2, .portfolio .container>p{
 	text-align: center;
-	color:white;
 }
 
-.center-block{
-	padding: 10px;
+.portfolio .container>img{
+	widows: 35px;
+	margin:0 auto;
 }
 
 .portfolio a{
 	text-decoration: none;
-	color:white;
-	padding:0 5px;
 }
 
 .portfolio li{
 	list-style-type: none;
 	display: inline;
-	padding: 5px 10px;
-	border: 2px solid #000055;
-
+	padding-left: 20px;
 }
 
 .portfolio ul{
 	text-align: center;
-	padding: 20px;
-
 }
 
-.row {
-	margin: 0;
-}
 .works .row img {
 	width: 100%;
 	height: auto;    /*保持原始比例*/
@@ -258,11 +251,6 @@
 
 .our .ourskills{
 	width: 50%;
-	float: left;
-}
-
-.our .ourskills img{
-	width: 100%;
 	float: left;
 }
 
@@ -444,129 +432,4 @@
 .socialmedia li.facebook{
 	background-color: #0088F6;
 }
-
-
-@media (max-width: 480px) {
-
-
-#nav {
-	display: none;
-}
-
-#banner{
-	position: relative; 
-	top:10%;	
-}
-
-
-.banner-container .clearfix {
-	float: none; /*將float清掉*/
-}
-
-.banner-container{
-	background-color: transparent;
-}
-
-.banner-container >div {
-	float: left;
-}
-
-#banner .title{
-	background-color: transparent;
-	text-align: center;
-}
-
-#banner img { /*跟隨父元素的寬度*/
-	width: 100%;
-	height: auto; /*保持原本圖片比例*/
-}
-
-#banner .left, #banner .right {
-	width: 30%;
-	font-size: 0px;
-	font-weight: 100;
-	line-height: 160px;
-}
-
-#banner .title {
-	width: 100%;
-	padding: 30px 0 ;
-}
-
-.features{
-	padding: 50px 0;
-}
-
-.feature{
-	width: 100%;
-	padding-right: 0;
-	padding-bottom: 40px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box; /*將content box改成border box*/
-}
-
-.feature .title  > img, .feature .title > h3 {
-	float: left;
-}
-
-.feature .title h3 {
-	text-transform: uppercase;
-	margin: 0;
-	line-height: 45px;
-}
-
-.feature .title img {
-	margin-right: 20px;
-}
-.portfolio li{
-	list-style-type: none;
-	display: block;
-	padding: 5px 10px;
-	margin:5px 0;
-	border: 2px solid #000055;
-}
-
-
-.row {
-	margin: 0;
-}
-.works .row img {
-	width: 100%;
-	height: auto;    /*保持原始比例*/
-}
-
-.works .row>.col-3{
-	
-	width: 100%;
-	overflow: hidden;
-	
-}
-
-.works .row>.col-6{
-	float: left;
-	overflow: hidden;
-	width: 100%;
-	overflow: hidden;
-}
-
-
-.works .row>.col-6>.col-6{
-	float: left;
-	overflow: hidden;
-	width: 100%;
-	overflow: hidden;
-	
-}
-
-.actionrow .container p{
-	padding-top: 10px;
-	float: none;
-	text-align: center;
-}
-
-
-}
-
-
 
