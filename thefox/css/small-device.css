@@ -4,8 +4,178 @@
 }
 
 #banner{
-	position: relative; /*可調整位置*/
-	top:30%;
+	position: relative; 
+	top:10%;	
+}
+
+
+.banner-container .clearfix {
+	float: none; /*將float清掉*/
+}
+
+.banner-container{
+	background-color: transparent;
+}
+
+.banner-container >div {
+	float: left;
+}
+
+#banner .title{
+	background-color: transparent;
+	text-align: center;
+}
+
+#banner img { /*跟隨父元素的寬度*/
+	width: 100%;
+	height: auto; /*保持原本圖片比例*/
+}
+
+#banner .left, #banner .right {
+	width: 30%;
+	font-size: 0px;
+	font-weight: 100;
+	line-height: 160px;
+}
+
+#banner .title {
+	width: 100%;
+	padding: 30px 0 ;
+}
+
+.features{
+	padding: 50px 0;
+}
+
+.feature{
+	width: 100%;
+	padding-right: 0;
+	padding-bottom: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; /*將content box改成border box*/
+}
+
+.feature .title  > img, .feature .title > h3 {
+	float: left;
+}
+
+.feature .title h3 {
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 45px;
+}
+
+.feature .title img {
+	margin-right: 20px;
+}
+.portfolio li{
+	list-style-type: none;
+	display: block;
+	padding: 5px 10px;
+	margin:5px 0;
+	border: 2px solid #000055;
+}
+
+
+.row {
+	margin: 0;
+}
+.works .row img {
+	width: 100%;
+	height: auto;    
+}
+
+.works .row>.col-3{
 	
+	width: 100%;
+	overflow: hidden;
 	
+}
+
+.works .row>.col-6{
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.works .row>.col-6>.col-6{
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	overflow: hidden;
+	
+}
+
+.actionrow .container p{
+	padding-top: 10px;
+	float: none;
+	text-align: center;
+}
+
+
+.our {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.our h2{
+	font-size: 2em;
+	font-weight: 200;
+	text-transform: capitalize;
+}
+
+.our h2>b {
+	font-weight: 600;
+}
+
+.our .ourskills{
+	width: 100%;
+}
+
+.our .ourskills img{
+	width: 100%;
+}
+
+
+.our .ourservice{
+	width: 100%;
+	text-align: center;
+}
+
+.our .ourservice .square-logo {
+	width: 100%;
+	float:none;
+}
+
+.our .ourservice img {
+	width: 80%;
+	margin:0 auto;
+}
+
+.our .ourservice .services {
+	padding-top: 10px;
+	float: none;
+	width: 100%;
+}
+
+.our .ourservice .services p{
+	margin: 0;
+	font-size: 1.1em;
+}
+
+.our .ourservice .viewdetail{
+	float: none;
+	padding-top: 30px;
+}
+
+.our .ourservice .viewdetail p{
+	font-size: 1.3em;
+	display: inline;
+	background-color: gray;
+	padding: 5px 10px; 
+	color: white;
+	border-radius: 5%;
 }
